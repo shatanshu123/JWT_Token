@@ -2,6 +2,7 @@ package com.example.demo.domain;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -26,5 +27,9 @@ public class User {
 	private String password;
 	@ManyToMany(fetch = FetchType.EAGER)
 	private Collection<Role> roles = new ArrayList<>();
+	public List<User> getRole() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

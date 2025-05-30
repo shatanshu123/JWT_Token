@@ -45,16 +45,16 @@ public class UserServiceImpl implements UserService {
 		user.getRole().add(role);
 	}
 
-	@Override
-	public User getUser(String username) {
-		// TODO Auto-generated method stub
-		return userRepo.findByUsername(username);
-	}
+	  @Override
+	    public User getUser(String username) {
+	    //    log.info("Fetching user {}", username);
+	        return userRepo.findByUsername(username);
+	    }
 
 	@Override
-	public List<User> getUsers() {
-		// TODO Auto-generated method stub
-		return userRepo.findAll();
-	}
+    public List<User> getUsers() {
+      //  log.info("Fetching all users");
+        return userRepo.findAll();
+    }
 
 }
